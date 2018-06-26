@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.example.quanteq.white.login">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/logos1"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q Restaurant"
+            android:background="#000"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>-->
+
+     <!--   <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/burgers"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" /> -->
+
+
+
+        <EditText
+
+            android:id="@+id/enteremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#000"
+            android:background="#fff"
+            android:layout_marginTop="120dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Username "
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/enterpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enteremail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:background="#fff"
+            android:textColorHint="#000"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/enterlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/corners3"
+            android:text="Login"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/enterregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corners"
+            android:text="New here? Sign Up for free!"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+           />
+        <Button
+            android:id="@+id/btn_reset_password"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:background="#fff"
+            android:text="@string/btn_forgot_password"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+    </LinearLayout>
+</LinearLayout>

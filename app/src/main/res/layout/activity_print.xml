@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.example.quanteq.white.print">
+
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:id="@+id/singleImageView"/>
+
+        <TextView
+            android:id="@+id/singleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/singleImageView"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_below="@+id/singleTitle"
+            android:id="@+id/singleDesc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_below="@+id/singleDesc"
+            android:id="@+id/singlePrice"/>
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singlePrice"
+         />
+    <TextView
+        android:id="@+id/qres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Q Restaurant"
+        android:layout_below="@+id/label"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/qres"
+        android:id="@+id/cc">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Food Name:"
+        android:id="@+id/pood"/>
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/dd"
+        android:layout_below="@+id/cc">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Table Number:"
+        android:id="@+id/poodL"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(Restaurant Service Only)"
+        android:id="@+id/location"
+       />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/aaa"
+        android:layout_below="@+id/ddd"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/Nquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Quantity:"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="decrementquantity"
+            android:text="-"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/quantitychange_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="incrementquantity"
+            android:text="+"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/aaa"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:textAllCaps="false"
+            android:background="@drawable/corners2"
+            android:text="Connect to Printer" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners2"
+            android:text="Print"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:background="@drawable/corners2"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+    </LinearLayout>
+</LinearLayout>

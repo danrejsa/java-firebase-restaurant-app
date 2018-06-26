@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="205dp"
+    android:orientation="vertical"
+    android:background="@color/darkgray"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#fff"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circlebackground"/>
+
+
+
+
+
+    <Button
+
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/carter"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="cartButton"
+        android:text="Add to Cart"
+        android:drawableRight="@drawable/cart"
+        android:background="@drawable/buttonstyle"
+        android:textColor="#fff"
+        android:textAllCaps="false" />
+    <Button
+
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/request"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Recipes"
+        android:onClick="OrderingButton"
+        android:drawableRight="@drawable/ic_local_dining_white_24dp"
+        android:background="@drawable/buttonstyle"
+        android:textColor="#fff"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
+
+

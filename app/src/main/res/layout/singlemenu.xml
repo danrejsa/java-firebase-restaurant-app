@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/foodImag"
+                android:background="@drawable/burger"/>
+            
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza"
+                android:textSize="30dp"
+                android:layout_toRightOf="@id/foodImag"
+                android:textColor="#000000"
+                android:layout_marginTop="12dp"
+                android:id="@+id/foodNam"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/foodImag"
+                android:layout_below="@id/foodNam"
+                android:text="spiced with extra cheese and pies"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/foodDes"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N20000"
+                android:layout_toRightOf="@id/foodDes"
+                android:layout_below="@id/foodDes"
+                android:layout_marginLeft="17dp"
+                android:textStyle="bold"
+                android:id="@+id/foodPric"
+                android:textColor="#4CAF50"/>
+            
+            
+            
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.quanteq.white.feedback"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please send in your feedback below"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="38dp"
+            />
+
+        <Button
+            android:id="@+id/feedbackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/feedback"
+            android:onClick="addFeedbackItemClicked"
+            android:layout_marginTop="117dp"
+
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/corners"
+            android:text="Send Feedback"/>
+
+    </RelativeLayout>
+
+
