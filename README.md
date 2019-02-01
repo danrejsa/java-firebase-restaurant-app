@@ -1,5 +1,5 @@
 # Restaurant-App
-This is an android mobile app (native) developed with java.
+This is an android mobile app (native) developed for order request/placement in a restaurant.
 
 # Functionalities
 * Displays list of menu (appetizer, main dish, dessert and drinks) and recipe.
